@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 @utility background-image {
   background-image: url('./src/images/background-image.jpg');
@@ -7,5 +8,7 @@
 @theme {
   --font-cormamont: 'Cormamont_Garamond_Light', serif;
   --font-helvetica: 'Helvetica', sans-serif;
+  --font-gothic: 'Century Gothic Paneuropean', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
   --text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 }

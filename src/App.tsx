@@ -1,18 +1,22 @@
 import './App.css'
 import './index.css'
-import {appointmentButton} from './components/appointmentButton.tsx'
+import HomePage from './pages/homePage.tsx'
+import LocationsPage from './pages/locations.tsx'
+import AboutUs from './pages/aboutUs.tsx'
+import Services from './pages/services.tsx'
+import { BrowserRouter, Routes, Route } from 'react-router'
 import Header from './components/header.tsx'
 
 export default function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Header />
-      <div
-        className="flex flex-col min-h-screen items-center justify-center background-image bg-cover bg-center">
-        <h1 className="font-cormamont text-5xl md:text-7xl lg:text-8xl font-medium text-white tracking-tighter leading-[0.9]">Bote Beauty </h1>
-        <h2 className="text-2xl mb-8 text-white font-cormamont italic opacity-90 text-center">Make every treatment unforgettable</h2>
-        {appointmentButton({onBookAppointment: () => window.open('localhost:5173/bookings', '_blank')})}
-      </div>
-    </div>
-  );
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/locations" element={<LocationsPage />} />
+        <Route path="/about-us" element={<AboutUs/>} />
+        <Route path="/services" element={<Services/>} />
+      </Routes>
+    </BrowserRouter>
+  )
 }

@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@utility background-image {
+  background-image: url('./src/images/background-image.jpg');
+}
+
+@theme {
+  --font-cormamont: 'Cormamont_Garamond_Light', serif;
+  --font-helvetica: 'Helvetica', sans-serif;
+  --text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}

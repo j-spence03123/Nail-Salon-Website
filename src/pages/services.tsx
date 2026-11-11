@@ -2,6 +2,8 @@ import {appointmentButton} from '../components/appointmentButton.tsx'
 import { useNavigate } from 'react-router'
 import ServiceCard from '../components/servicesCard.tsx';
 import nailTreatmentsImg from '../images/nail-treatments.jpg'
+import manicure from '../images/manicure.jpg'
+import makeup from '../images/makeup.jpg'
 
 export default function Services() {
     const navigate = useNavigate();
@@ -26,16 +28,16 @@ export default function Services() {
                 </div>
                 <div className="flex flex-col max-w-7xl mx-3">
                     <ServiceCard
-                        serviceName = "Nail Care"
-                        serviceDescription= "Expert filing, shaping, cuticle care and an extensive range of lacquer shades and gel finishes."
-                        serviceImg = {nailTreatmentsImg}
+                        serviceName = "Manicure"
+                        serviceDescription= "Complete holistic treatment for a freshly manicured look and beautifully pedicured feet."
+                        serviceImg = {manicure}
                     />
                 </div>
                 <div className="flex flex-col max-w-7xl mx-3">
                     <ServiceCard
-                        serviceName = "Nail Care"
-                        serviceDescription= "Expert filing, shaping, cuticle care and an extensive range of lacquer shades and gel finishes."
-                        serviceImg = {nailTreatmentsImg}
+                        serviceName = "Makeup"
+                        serviceDescription= "The opportunity to create a look thats uniquely you. Your therapist works with you to guide you to the products that are right for you."
+                        serviceImg = {makeup}
                     />
                 </div>
             </div>

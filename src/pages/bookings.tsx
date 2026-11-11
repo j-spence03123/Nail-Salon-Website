@@ -10,6 +10,7 @@ import "cally"
 
 
 export default function Bookings() {
+    // TODO: turn current and previous into a stack
     const [currentBookingMenuState, setCurrentBookingMenuState] = useState(BookingMenuState.Locations)
     const [previousBookingMenuState, setPreviousBookingMenuState] = useState<null | BookingMenuState>(null)
     const [selectedService, setSelectedService] = useState("");

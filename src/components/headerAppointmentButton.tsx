@@ -6,7 +6,7 @@ export function headerAppointmentButton({onBookAppointment}: headerAppointmentBu
   return (
     <div>
       <button
-      className = "rounded-full bg-red-300 px-9 py-4 font-gothic text-sm text-white font-bold "
+      className = "rounded-full bg-rose-300 px-9 py-4 font-gothic text-sm font-bold translate-y-[-6px] button-animation cursor-pointer"
       onClick={onBookAppointment}>
         Book Now
       </button>

@@ -6,7 +6,7 @@ export function locationsButton({onLocations}: LocationsButtonProps) {
   return (
     <div>
       <button
-      className = "rounded-full bg-rose-100 px-9 py-4 font-gothic text-sm font-bold"
+      className = "rounded-full px-9 py-4 font-gothic text-base font-bold cursor-pointer button-animation "
       onClick={onLocations}>
         LOCATIONS
       </button>

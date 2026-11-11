@@ -5,10 +5,43 @@
   background-image: url('./src/images/background-image.jpg');
 }
 
+@utility button-animation {
+  @apply transition-transform duration-300 ease-in-out;
+
+  &:hover {
+    @apply scale-105;
+  }
+}
+
+@utility button-animation-locations {
+  @apply transition-transform duration-300 ease-in-out;
+
+  &:hover {
+    @apply scale-105;
+    @apply bg-stone-800;
+  }
+}
+
+
 @theme {
   --font-cormamont: 'Cormamont_Garamond_Light', serif;
   --font-helvetica: 'Helvetica', sans-serif;
   --font-gothic: 'Century Gothic Paneuropean', sans-serif;
   --font-poppins: 'Poppins', sans-serif;
   --text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  --animate-rise-fade-in: rise-fade-in 1s ease-out forwards;
+  --animate-button-animation: transition duration ease-in-out hover:scale-110;
+
+  @keyframes 
+  
+  rise-fade-in{
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }

@@ -32,8 +32,7 @@
   --animate-rise-fade-in: rise-fade-in 1s ease-out forwards;
   --animate-button-animation: transition duration ease-in-out hover:scale-110;
 
-  @keyframes 
-  
+  @keyframes
   rise-fade-in{
     from {
       opacity: 0;

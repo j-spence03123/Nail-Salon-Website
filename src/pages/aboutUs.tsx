@@ -1,12 +1,9 @@
-
-import { useNavigate } from 'react-router'
 import nailVarnish from '../images/nail-varnish.jpg'
 import fenty from '../images/fenty.png'
 import tilbury from '../images/charlotte-tilbury.png'
 import too_faced from '../images/too_faced.png'
 
 export default function AboutUs() {
-    const navigate = useNavigate();
     return (
         <div className="flex bg-white w-full min-h-screen justify-center pt-18 items-center">
             <div className="flex flex-col px-10 animate-rise-fade-in ">

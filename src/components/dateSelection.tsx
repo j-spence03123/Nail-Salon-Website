@@ -2,14 +2,14 @@
 import "cally";
 
 type AppointmentSelectionProps = {
-    dates: string[];
+    date: string;
     selectedDate: string;
     onSelect: (dates: string) => void;
 }
 
 export function AppointmentSelection({
-    members,
-    selectedMember,
+    date,
+    selectedDate,
     onSelect,
 }: AppointmentSelectionProps) {
   return (
@@ -18,7 +18,7 @@ export function AppointmentSelection({
         <span>Service</span>
         <select
             className="rounded-lg border border-stone-300 bg-white px-4 py-3 font-gothic text-base tracking-[0.2em] text-bold opacity-80 text-neutral-500"
-            value={selectedMember}
+            value={selectedDate}
             onChange={(event) => onSelect(event.currentTarget.value)}
         >
             <calendar-date>

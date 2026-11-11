@@ -1,12 +1,10 @@
 import {appointmentButton} from '../components/appointmentButton.tsx'
-import { useNavigate } from 'react-router'
 import ServiceCard from '../components/servicesCard.tsx';
 import nailTreatmentsImg from '../images/nail-treatments.jpg'
 import manicure from '../images/manicure.jpg'
 import makeup from '../images/makeup.jpg'
 
 export default function Services() {
-    const navigate = useNavigate();
     return (
         <section id = "locations" className="py-75 min-w-full min-h-full ">
             <div className="mx-auto max-w-7xl px-6 lg:px-8 animate-rise-fade-in">

@@ -12,7 +12,7 @@ export function StaffSelection({
     onSelect,
 }: StaffSelectionProps) {
   return (
-     <label className="flex flex-col gap-2">
+     <label className="flex font-cormamont px-10 py-4 flex-col gap-2">
         <span>Service</span>
         <select
             className="rounded-lg border border-stone-300 bg-white px-4 py-3 font-gothic text-base tracking-[0.2em] text-bold opacity-80 text-neutral-500"

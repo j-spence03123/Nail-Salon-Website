@@ -11,7 +11,7 @@ type HeaderProps = {
 export default function Header(){
     const navigate = useNavigate();
     return (
-        <div className="max-w-full fixed px-6 flex items-center justify-between h-[72px] w-full bg-rose-50">
+        <div className="max-w-full fixed px-6 z-50 flex items-center justify-between h-[72px] w-full bg-rose-50">
             <div className="flex  justify-start flex-row text-stone-900 translate-y-[-6px] translate-x-[600px]">
                 {titleButton({onTitleButton: () => navigate('/')})}
             </div>

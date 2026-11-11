@@ -30,7 +30,20 @@
   --font-poppins: 'Poppins', sans-serif;
   --text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
   --animate-rise-fade-in: rise-fade-in 1s ease-out forwards;
+  --animate-booking-card: rise-fade-in 0.5s ease-out forwards;
   --animate-button-animation: transition duration ease-in-out hover:scale-110;
+
+  @keyframes
+  booking-card{
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
   @keyframes
   rise-fade-in{

@@ -1,8 +1,8 @@
 
 
 type ServiceSelectionProps = {
-    services: string[];
-    selectedService: string;
+    services: { id: string; name: string }[]
+    selectedService: string
     onSelect: (service: string) => void;
 }
 
@@ -12,7 +12,7 @@ export function ServiceSelection({
     onSelect,
 }: ServiceSelectionProps) {
   return (
-     <div className="flex flex-col  px-10 py-4 gap-2">
+     <div className="flex flex-col  px-6 py-4 gap-2">
         <span className="font-cormamont">Service</span>
         <select
             className="rounded-lg border border-stone-300 bg-white px-4 py-3 font-gothic text-base text-bold opacity-80 text-neutral-500"
@@ -21,8 +21,8 @@ export function ServiceSelection({
         >
             <option value="" disabled hidden>Choose a service</option>
             {services.map((service) => (
-                <option key={service} value={service} className="font-gothic rounded-lg animate-drop-in">
-                    {service}
+                <option key={service.id} value={service.id} className="font-gothic rounded-lg animate-drop-in">
+                    {service.name}
                 </option>
             ))}
         </select>

@@ -40,7 +40,7 @@ export default function LocationsPage() {
                         name="London"
                         address="10 Downing St, London SW1A 2AA"
                         phone="07777 777777"
-                        weekHours="Mon - Sat: 9am - 5pm"
+                        weekHours="Mon - Sat: 9am - 7pm"
                         sunHours= "Sun: 10am - 5pm"
                         onBook={() => navigate("/bookings")}
                     />

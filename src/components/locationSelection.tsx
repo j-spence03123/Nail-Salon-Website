@@ -13,7 +13,9 @@ export function LocationSelection({
 }: LocationSelectionProps) {
   return (
      <div className="flex flex-col  px-6 py-4 gap-2">
-        <span className="font-cormamont">Location</span>
+        <div className="mb-4 flex items-center justify-between gap-4">
+            <h3 className="mt-3 font-cormamont text-4xl text-stone-900 ">Choose a location</h3>
+        </div>
         <select
             className="rounded-lg border border-stone-300 bg-white px-4 py-3 font-gothic text-base text-bold opacity-80 text-neutral-500"
             value={selectedLocation}

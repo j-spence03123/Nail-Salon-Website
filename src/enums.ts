@@ -3,4 +3,5 @@ export enum BookingMenuState {
     Services = "services",
     Members = "members",
     Dates = "dates", 
+    Booked = "booked"
 }

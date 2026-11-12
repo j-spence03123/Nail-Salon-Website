@@ -1,13 +1,13 @@
 export const services = [
-    {id : "nail-care", name : "Nail Care", durationMinutes: 45 },
+    {id : "nail-care", name : "Nail Care", durationMinutes: 60 },
     {id : "manicure", name : "Manicure", durationMinutes: 60},
     {id : "makeup", name : "Makeup", durationMinutes: 60},
 ]
 
 export const locations = [
-    {id : "chester", name: "Chester"},
-    {id : "manchester", name: "Manchester"},
-    {id : "london", name: "London"}
+    { id: "chester", name: "Chester", openingHours: { open: "09:00", close: "20:00" }, sundayHours: { open: "10:00", close: "17:00" } },
+    { id: "manchester", name: "Manchester", openingHours: { open: "10:00", close: "17:00" }, sundayHours: { open: "11:00", close: "15:00" } },
+    { id: "london", name: "London", openingHours: { open: "09:00", close: "19:00" }, sundayHours: { open: "10:00", close: "17:00" } },
 ]
 
 export const professionals = [

@@ -1,4 +1,3 @@
-import {appointmentButton} from '../components/appointmentButton.tsx'
 import ServiceCard from '../components/servicesCard.tsx';
 import nailTreatmentsImg from '../images/nail-treatments.jpg'
 import manicure from '../images/manicure.jpg'
